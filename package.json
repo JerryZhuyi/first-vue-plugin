@@ -1,11 +1,16 @@
 {
   "name": "first-vue-plugin",
   "version": "0.1.0",
-  "private": true,
+  "author": "jerryzhuyi",
+  "main": "myPlugin/sumFunction.umd.min.js",
+  "keyword": "vue npm test",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name sumFunction --dest myPlugin src/myPlugin/sumPlugin/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
